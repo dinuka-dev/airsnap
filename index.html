@@ -16,109 +16,181 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-            <h1>Current Air Quality</h1>
             <div class="wrapper">
-                <div class="container">
+                <div class="air">
+                    <h1>Air Quality</h1>
+                    <div class="container">
 
-                    <div class="card" id="temp">
-                        <img class="icon" src="temp.png">
-                        <div class="box">
-                            <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle id="temp-value" cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2><span id="temp-num">0</span><b>C</b></h2>
-                            </div>
-                            <h3>Temparature</h3>
+                        <div class="card" id="temp">
+                            <img class="icon" src="images/temp.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="temp-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="temp-num">0</span><b>C</b></h2>
+                                </div>
+                                <h3>Temparature</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card" id="hum">
-                        <img class="icon" src="humidity.png">
-                        <div class="box">
-                            <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle id="hum-value" cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2><span id="hum-num">0</span><b>%</b></h2>
-                            </div>
-                            <h3>Humidity</h3>
+                        <div class="card" id="hum">
+                            <img class="icon" src="images/humidity.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="hum-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="hum-num">0</span><b>%</b></h2>
+                                </div>
+                                <h3>Humidity</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card" id="aq">
-                        <img class="icon" src="aq.png">
-                        <div class="box">
-                            <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle id="aq-value" cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2><span id="aq-num">0</span><b>PPM</b></h2>
-                            </div>
-                            <h3>Air Quality</h3>
+                        <div class="card" id="aq">
+                            <img class="icon" src="images/aq.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="aq-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="aq-num">0</span><b>PPM</b></h2>
+                                </div>
+                                <h3>Air Quality</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="card" id="no2">
-                        <img class="icon" src="gas.png">
-                        <div class="box">
-                            <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle id="no2-value" cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2><span id="no2-num">0</span><b>PPM</b></h2>
-                            </div>
-                            <h3>NO2</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card" id="nh3">
-                        <img class="icon" src="gas.png">
-                        <div class="box">
-                            <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle id="nh3-value" cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2><span id="nh3-num">0</span><b>PPM</b></h2>
-                            </div>
-                            <h3>NH3</h3>
+                        <br>
+                        <div class="card" id="no2">
+                            <img class="icon" src="images/gas.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="no2-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="no2-num">0</span><b>PPM</b></h2>
+                                </div>
+                                <h3>NO2</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card" id="co">
-                        <img class="icon" src="gas.png">
-                        <div class="box">
-                            <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle id="co-value" cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h2><span id="co-num">0</span><b>PPM</b></h2>
-                            </div>
-                            <h3>CO</h3>
+                        <div class="card" id="nh3">
+                            <img class="icon" src="images/gas.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="nh3-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="nh3-num">0</span><b>PPM</b></h2>
+                                </div>
+                                <h3>NH3</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="card" id="co">
+                            <img class="icon" src="images/gas.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="co-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="co-num">0</span><b>PPM</b></h2>
+                                </div>
+                                <h3>CO</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
+                <div class="water">
+                    <h1>Water Quality</h1>
+                    <div class="container">
+
+                        <div class="card" id="ph">
+                            <img class="icon" src="images/ph.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="ph-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="ph-num">0</span><b>C</b></h2>
+                                </div>
+                                <h3>pH</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" id="tds">
+                            <img class="icon" src="images/tds.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="tds-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="tds-num">0</span><b>%</b></h2>
+                                </div>
+                                <h3>TDS</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card" id="wt">
+                            <img class="icon" src="images/wt.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="wt-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="wt-num">0</span><b>C</b></h2>
+                                </div>
+                                <h3>Water Temp</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" id="turbility">
+                            <img class="icon" src="images/turbility.png">
+                            <div class="box">
+                                <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle id="turbility-value" cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2><span id="turbility-num">0</span><b>%</b></h2>
+                                </div>
+                                <h3>Turbility</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
             </div>
 
 

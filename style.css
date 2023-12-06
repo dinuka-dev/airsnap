@@ -16,14 +16,13 @@ body {
   
   body {
     min-height: 100vh;
-    background: linear-gradient(45deg, #333333, #5a5454);
+    background: linear-gradient(90deg, #9f9f9f, #0f61a5 );
     /* flex-direction: column; */
   }
 
   .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 
 h1 {
@@ -33,16 +32,17 @@ h1 {
     color: #fff;
     font-size: 3em;
 }
+
+.air, .water {
+  display: inline-block;
+  padding: 0 100px;
+}
   
   .container {
-    position: relative;
-    width: 960px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: block;
   }
+
   .container .card {
-    position: relative;
     width: 250px;
     height: 330px;
     border-radius: 10px;
@@ -52,8 +52,17 @@ h1 {
     overflow: hidden;
     transition: 0.5s ease;
     margin-bottom: 25px;
-    display: block;
+    display: inline-block;
   }
+
+  .container #temp, .container #hum, .container #no2, .container #nh3 {
+    margin-right: 25px;
+  }
+
+  .container #ph, .container #wt {
+    margin-right: 25px;
+  }
+
   .container .card:hover {
     transform: translatey(-15px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
@@ -68,7 +77,10 @@ h1 {
   .container .card:hover h3 {
     color: #fff;
   }
-  .container .card:before {
+  .container .card:hover img.icon {
+    opacity: 1;
+  }
+  /* .container .card:before {
     content: "";
     position: absolute;
     top: 0;
@@ -77,7 +89,7 @@ h1 {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.03);
     pointer-events: none;
-  }
+  } */
   .container .percent {
     position: relative;
     width: 150px;
@@ -90,7 +102,7 @@ h1 {
   }
   .container .percent h3 {
     margin-top: 16px;
-    color: #777;
+    color: #b7b7b7;
     font-size: 22px;
     transition: 0.5s ease;
   }
@@ -160,6 +172,7 @@ h1 {
   }
 
 img.icon {
+    opacity: 0.8;
     width: 75px;
     margin: 15px 0 15px;
 }
